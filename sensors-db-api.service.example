@@ -1,0 +1,14 @@
+[Unit]
+Description=uWSGI sensor db
+After=syslog.target
+
+[Service]
+WorkingDirectory=/path/to/sensors-db-api
+ExecStart=/path-to/sensors-db-api/wsgi.run
+User=uername
+Restart=always
+Type=notify
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target

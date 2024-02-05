@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+PY_VENV=/home/niklas/webapps/flask/bilder.git/venv
+PATH=$PY_VENV/bin:$PATH
+
+uwsgi --ini wsgi.ini
+

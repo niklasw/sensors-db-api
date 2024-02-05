@@ -1,0 +1,16 @@
+{
+    "debug": false,
+    "server": {
+        "static_root":"/static",
+        "port":XXXX,
+        "ip":"XXX.XX.XX.XX"
+    },
+    "database": {
+        "type": "sqlite3",
+        "sqlite3": {
+            "root": "./db",
+            "file": "./db/data_db.sqlite",
+            "max_rows": 10e6
+        }
+    }
+}
