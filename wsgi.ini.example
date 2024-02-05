@@ -1,0 +1,9 @@
+[uwsgi]
+module = wsgi:app
+master = true
+processes = 3
+gid = www-data
+http = 172.31.21.61:5600
+chmod-socket = 660
+vacuum = true
+die-on-term = true
