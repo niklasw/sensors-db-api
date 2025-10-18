@@ -29,7 +29,9 @@ def calc_since(seconds: int):
     if seconds > 0:
         now = datetime.now().timestamp()
         timestamp = now - seconds
-    return timestamp
+        return timestamp
+    print(f'calcsince with arg {seconds} <= 0')
+    return -1
 
 
 @app.route('/api/<table>', methods=['GET'])
